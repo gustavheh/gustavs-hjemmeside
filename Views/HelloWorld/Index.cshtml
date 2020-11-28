@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Gustav";
+}
+<script>
+    function loveNumberf()
+    {
+        var input1 =  document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var resultat = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("loveNumber").innerHTML =  resultat +'%'  ;
+    }       
+</script>
+
+<h2>Gustav</h2>
+
+<p>dette er Gustavs første hjemmeside </p>
+<!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
+<h2>Hej Velkommen til den magiske Match Maker der giver en 100% valid indikation af hvorgodt du macher med en person.</h2>
+<table class="editorDemoTable">
+<tbody>
+<tr>
+<td style="width: 57.7778px;">navn+</td>
+<td style="width: 70.2222px;">navn = </td>
+<td style="width: 50.6667px;">procent:</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<p>procenten idikere hvor godt du macher med....</p>
+<p><textarea id="input1"></textarea> <textarea id="input2"></textarea> <button type="button" onclick="loveNumberf()">generate</button></p>
+</td>
+<td style="position:relative;"><img style="font-size: 14px;" src="https://upload.wikimedia.org/wikipedia/commons/8/86/A_perfect_SVG_heart.svg" alt="hart" width="200" height="200" />
+<div id="loveNumber" 
+style="width: 100%; color: white; font-size: 40px; font-weight: bold; position: absolute; top: 55px; text-align:center;">
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
